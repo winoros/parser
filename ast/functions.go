@@ -778,6 +778,7 @@ func (n *WindowFuncExpr) Format(w io.Writer) {
 
 // Accept implements Node Accept interface.
 func (n *WindowFuncExpr) Accept(v Visitor) (Node, bool) {
+	panic("???")
 	newNode, skipChildren := v.Enter(n)
 	if skipChildren {
 		return v.Leave(newNode)
